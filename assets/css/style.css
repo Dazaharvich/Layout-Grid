@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+    
+}
+
+
+/* NAVBAR */
+.navbar{
+    background-color: rgb(6, 23, 61);
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+.navbar h1{
+    color: rgb(232, 237, 241);
+    font-size: 3rem;
+}
+
+
+/* CONTAINER */
+.container{
+    padding-top: 4rem;
+    background-color: rgb(247, 247, 247);
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: auto 0.5fr;
+    grid-template-areas: 
+    "aside main"
+    "footer footer"; 
+}
+.main { 
+    grid-area: main;
+}
+
+
+/* ASIDE */
+.menu-lateral{
+padding-left: 20px;
+padding-bottom: 4rem;
+display: flex;
+flex-direction: column;
+row-gap: 10px;
+height: 100vh;
+}
+
+.categorias{
+    display: flex;
+    row-gap: 6px;
+}
+
+.productos{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.4rem;
+    
+}
+
+.cantidades{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.4rem;
+    color: rgb(169, 169, 169);
+
+}
+
+/* GALERIA DE PRODUCTOS */
+
+.card img{
+    width: 300px;
+    height: 300px;
+}
+
+.card{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    height: 40%;
+    row-gap: 0.5rem;
+    border-radius: 5px;
+    border: solid 5px #A491D2;
+    background-color: #ffffff;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    
+}
+
+button{
+    background-color: #A491D2;
+    border: none;
+    color: white;
+    padding: 10px 60px;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: rgb(6, 23, 61);
+    color: rgb(232, 237, 241);
+    font-size: 20px;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    grid-area: footer;
+}
